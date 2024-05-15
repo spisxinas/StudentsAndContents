@@ -1,16 +1,22 @@
 
 @service = mysrvdemo
 ### 
-POST http://localhost:4004/odata/v4/{{service}}/OrderItems
+POST http://localhost:4004/hello/myPath/UpdateStudentsSRV
 Content-Type: application/json
 
-{"email":"spirosp1998@hdsa.com","first_name":"spiros", "last_name":"pischinas"}
+{"id":1,"first_name":"newName2"}
 
 
 ### 
 GET http://localhost:4004/odata/v4/{{service}}/StudentsSRV
 
 ### 
-GET http://localhost:4004/hello/myPath/StudentsSRV
+GET http://localhost:4004/hello/myPath/UpdateStudentsSRV
+
+###
+POST http://localhost:4004/hello/myPath/UpdateStudentsSRV
+Content-Type: application/json
+
+{"id":2,"email":"spirosp1998@gmail.com","first_name":"spiros","last_name":"pischinas"}
 
 
