@@ -1,0 +1,16 @@
+
+@service = mysrvdemo
+### 
+POST http://localhost:4004/odata/v4/{{service}}/OrderItems
+Content-Type: application/json
+
+{"email":"spirosp1998@hdsa.com","first_name":"spiros", "last_name":"pischinas"}
+
+
+### 
+GET http://localhost:4004/odata/v4/{{service}}/StudentsSRV
+
+### 
+GET http://localhost:4004/hello/myPath/StudentsSRV
+
+

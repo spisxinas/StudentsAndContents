@@ -8,6 +8,7 @@
   "dependencies": {
     "@sap/cds": "^7",
     "express": "^4",
+    "hdb": "^0.19.8",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
@@ -15,5 +16,15 @@
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 using myNamespace from '../db/Students';
 
-// @path: '/hello/myPath'
+@path: '/hello/myPath'
 service mysrvdemo {
 
     @readonly entity StudentsSRV as projection on myNamespace.Student
