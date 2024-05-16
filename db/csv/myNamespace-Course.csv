@@ -1,0 +1,4 @@
+ID,courseName,courseDuration,coursePrice,publishedStatus
+1,Course1,10,50,true
+2,Course2,20,60,true
+3,Course3,40,60,true
