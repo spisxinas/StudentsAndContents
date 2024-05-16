@@ -4,7 +4,7 @@
 POST http://localhost:4004/hello/myPath/UpdateStudentsSRV
 Content-Type: application/json
 
-{"id":1,"first_name":"newName2"}
+{"id":1,"first_name":"newName2","last_name":"newlastname"}
 
 
 ### 
@@ -14,9 +14,27 @@ GET http://localhost:4004/odata/v4/{{service}}/StudentsSRV
 GET http://localhost:4004/hello/myPath/UpdateStudentsSRV
 
 ###
-POST http://localhost:4004/hello/myPath/UpdateStudentsSRV
+POST http://localhost:4004/hello/myPath/InsertStudentSRV
 Content-Type: application/json
 
-{"id":2,"email":"spirosp1998@gmail.com","first_name":"spiros","last_name":"pischinas"}
+{"id":18,"email":"spirosp1998@gmail.com","first_name":"spiros","last_name":"pischinas"}
 
+
+###
+POST http://localhost:4004/hello/myPath/DeleteStudentSRV
+Content-Type: application/json
+
+{"id":2}
+
+###
+POST http://localhost:4004/hello/myPath/CustomGetStudent
+Content-Type: application/json
+
+{"id":22,"email":"spirosp1998@gmai.com","first_name":"spiros","last_name":"pischinas"}
+
+
+
+
+###
+GET http://localhost:4004/hello/myPath/CustomGetStudent
 
